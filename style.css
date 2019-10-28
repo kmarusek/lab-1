@@ -1,0 +1,116 @@
+body {
+    background:  #f9fafc;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.link{
+    text-decoration: none;
+    color: #69696a;   
+}
+
+.active {
+    color: #000;
+}
+
+.button {
+text-decoration: none;  
+border: none;
+background: #000;
+color: #fff;
+margin: 20px 0;
+padding: 10px;
+border-radius: 30px;
+font-size: 18px;
+width: 100%;
+display: block;
+text-align: center;
+box-sizing: border-box;
+}
+
+p {
+    border-left: solid #69696a 2px;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 768px){
+  /*HEADER*/
+    ul{ 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    li{
+        padding : 5px;
+    }
+    .active{
+        flex-grow: 1;
+    }
+    .button {
+        width: auto;
+        padding: 8px 20px;
+    }
+
+/*MAIN*/
+
+    main {
+        display: flex;
+        padding: 100px 0;
+        flex-direction: row;
+    }
+    article {
+        height: 50vh;
+        flex: 1;
+    }
+
+/*CIRCLES*/
+    section {
+        flex: 1;
+    }
+
+
+    .circle-1 {
+        background-color: rgba(247, 136, 167, 0.6);
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        right: 10vw;
+
+    }
+
+    .circle-3 {
+        background-color: rgba(207, 130, 213, 0.6);
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        right: 7vw;
+        top: 35vh;
+
+
+    }
+
+    .circle-2 {
+        background-color: rgba(247, 193, 162, 0.7);
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        right: 8vw;
+        top: 45vh;
+        z-index: 1;
+    }
+/*FOOTER*/
+
+    button {
+        position: absolute;
+        left: 45vw;         
+    }
+}
